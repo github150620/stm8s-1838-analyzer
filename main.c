@@ -9,6 +9,7 @@ uint16_t ticks_now = 0;
 uint16_t ticks_last = 0;
 
 uint16_t index = 0;
+char buf[32];
 
 void UART1_SendString(char *s) {
 	for (;*s!=0;s++) {
